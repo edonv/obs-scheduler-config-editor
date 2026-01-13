@@ -1,0 +1,27 @@
+<!-- https://github.com/json-editor/json-editor/blob/master/docs/form-submission.html -->
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/json-editor.css">
+    <!-- json-editor CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/css/jsoneditor.min.css">
+    <!-- Custom FontAwesome kit (v7) -->
+    <script src="https://kit.fontawesome.com/f588742617.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <form method="get">
+            <input id="input" type="hidden" name="json">
+            <div id='editor-container'></div>
+            <button id="submit" class="btn btn-primary" width="100" type="submit">
+                <i class="fa-solid fa-arrow-right"></i>
+                Submit
+            </button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.js"></script>
+    <script src="assets/js/schema.js"></script>
+    <script src="assets/js/json-editor.js"></script>
+</body>
