@@ -17,5 +17,5 @@ const config = {
 const editor = new JSONEditor(document.getElementById('editor-container'), config);
 
 editor.on('change', function () {
-    document.getElementById('input').value = JSON.stringify(editor.getValue());
+    document.getElementById('input').value = JSON.stringify(editor.getValue(), null, 4);
 });
