@@ -1,0 +1,102 @@
+/* Styling for Section Headers */
+.je-header > span:not([class]) {
+    font-weight: bold;
+}
+
+/* <div> wrapped around array tab layout */
+div:has(> .je-tabholder.tabs) {
+    /* Layout tabbed array as a flexbox */
+    display: flex;
+    /* Add gap between tab buttons and content panel */
+    gap: 8px;
+
+    /* Array Tab Bar */
+    .je-tabholder.tabs {
+        /* Give the tab bar automatic width based on content */
+        width: auto;
+        min-width: 130px;
+
+        /* Force tab bar to be treated as a vertical flexbox to allow easier control of spacing within */
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        /* Tab Button */
+        .je-tab {
+            /* Give tabs full border */
+            border-width: 1px;
+            border-radius: 5px;
+
+            /* Force to 1 line */
+            white-space: nowrap;
+
+            /* Add horizontal spacing between button text and border */
+            padding: 0px 8px;
+        }
+    }
+
+    /* Content section of tabbed array layout */
+    .content {
+        width: 100%;
+
+        .je-indented-panel {
+            /* Remove margin spacing */
+            margin: 0;
+        }
+
+        /* Array element title and control buttons. Button disabled in editor's options, but still rendered as empty div with set height */
+        .je-object__title,
+        .je-object__controls {
+            display: none;
+        }
+
+        /* Event object editor */
+        .je-indented-panel .je-object__container .je-indented-panel > div > div {
+            /* Flexbox layout for Event object editor */
+            /* display: flex;
+            flex-direction: column;
+            gap: 12px; */
+
+            /* Offset added margin-bottom of last visible .row */
+            margin-bottom: -12px;
+
+            /* Rows inside Event object editor (each row is a property) */
+            .row {
+                /* Add space after each visible row */
+                /* Hidden rows' margins aren't laid out */
+                /* Last row's margin-bottom is offset in parent div */
+                margin-bottom: 12px;
+
+                /* Change styling of description text */
+                p.je-form-input-label[id*="description"] {
+                    font-size: smaller;
+                    font-weight: normal;
+                    font-style: italic;
+                    margin-bottom: 0px;
+                }
+
+                /* Add spacing between a checkbox and title */
+                label:has(input.je-checkbox[type="checkbox"]) {
+                    font-weight: bold;
+                }
+
+            }
+        }
+    }
+
+    /* Empty element after .content, if displayed it causes parent flexbox to insert `gap` */
+    .je-tabholder--clear {
+        display: none;
+    }
+}
+
+/* Add spacing between a checkbox and title */
+input.je-checkbox[type="checkbox"] {
+    margin-right: 4px;
+}
+
+/* MARK: Add Icons to Buttons */
+
+/* button.json-editor-btn-add::before {
+
+} */
