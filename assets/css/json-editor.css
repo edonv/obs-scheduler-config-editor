@@ -1,4 +1,4 @@
-/* Styling for Section Headers */
+/* Section Headers */
 .je-header > span:not([class]) {
     font-weight: bold;
 }
