@@ -10,6 +10,20 @@
 </head>
 
 <body>
+    <form id="file-form">
+        <label for="upload" class="file-button-label" title="Upload file to edit">
+            <i class="fa-solid fa-upload"></i>
+            Upload
+        </label>
+        <input id="upload" class="file-button-input" type="file" accept=".json">
+
+        <label for="download" class="file-button-label" title="Download edited file">
+            <i class="fa-solid fa-download"></i>
+            Download
+        </label>
+        <input id="download" class="file-button-input" type="button">
+    </form>
+
     <div>
         <form method="get">
             <input id="input" type="hidden" name="json">
