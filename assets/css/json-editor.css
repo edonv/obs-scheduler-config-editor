@@ -3,6 +3,28 @@
     font-weight: bold;
 }
 
+/* Upload/Download Button Section */
+#file-form {
+    /* Layout */
+    display: flex;
+    gap: 8px;
+
+    /* Upload/Download Buttons */
+    .file-button-label {
+        /* Add click button cursor */
+        cursor: pointer;
+
+        border: 1px solid gray;
+        border-radius: 4px;
+        padding: 2px 6px;
+    }
+
+    /* Hide <input class=""> */
+    .file-button-input {
+        display: none;
+    }
+}
+
 /* <div> wrapped around array tab layout */
 div:has(> .je-tabholder.tabs) {
     /* Layout tabbed array as a flexbox */
