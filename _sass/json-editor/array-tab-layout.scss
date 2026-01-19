@@ -75,6 +75,12 @@ div:has(> .je-tabholder.tabs) {
                     font-weight: bold;
                 }
             }
+
+            // Event Edit Buttons (delete, copy, move up/down)
+            span:has(button[class^="json-editor-btn-"]) {
+                display: flex;
+                gap: 4px;
+            }
         }
     }
 
