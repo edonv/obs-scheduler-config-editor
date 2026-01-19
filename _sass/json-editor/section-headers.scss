@@ -1,3 +1,17 @@
-.je-header>span:not([class]) {
-    font-weight: bold;
+.je-header {
+    // Header text for each editor section
+    >span:not([class]) {
+        font-weight: bold;
+    }
+
+    .je-header-button-holder {
+        // Space out items (but not the object title header wrapper)
+        display: inline-flex !important;
+        gap: 4px;
+
+        // Hide empty elements
+        &:empty {
+            display: none !important;
+        }
+    }
 }
