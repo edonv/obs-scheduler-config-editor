@@ -1,0 +1,21 @@
+/* Upload/Download Button Section */
+#file-form {
+    /* Layout */
+    display: flex;
+    gap: 8px;
+
+    /* Hide <input class=""> */
+    .file-button-input {
+        display: none;
+    }
+}
+
+/* Upload/Download Buttons,  */
+#file-form.file-button-label {
+    /* Add click button cursor */
+    cursor: pointer;
+
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 2px 6px;
+}

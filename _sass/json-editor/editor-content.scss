@@ -1,30 +1,3 @@
-/* Section Headers */
-.je-header > span:not([class]) {
-    font-weight: bold;
-}
-
-/* Upload/Download Button Section */
-#file-form {
-    /* Layout */
-    display: flex;
-    gap: 8px;
-
-    /* Upload/Download Buttons */
-    .file-button-label {
-        /* Add click button cursor */
-        cursor: pointer;
-
-        border: 1px solid gray;
-        border-radius: 4px;
-        padding: 2px 6px;
-    }
-
-    /* Hide <input class=""> */
-    .file-button-input {
-        display: none;
-    }
-}
-
 /* <div> wrapped around array tab layout */
 div:has(> .je-tabholder.tabs) {
     /* Layout tabbed array as a flexbox */
@@ -101,7 +74,6 @@ div:has(> .je-tabholder.tabs) {
                 label:has(input.je-checkbox[type="checkbox"]) {
                     font-weight: bold;
                 }
-
             }
         }
     }
@@ -116,9 +88,3 @@ div:has(> .je-tabholder.tabs) {
 input.je-checkbox[type="checkbox"] {
     margin-right: 4px;
 }
-
-/* MARK: Add Icons to Buttons */
-
-/* button.json-editor-btn-add::before {
-
-} */
