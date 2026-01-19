@@ -10,8 +10,9 @@
     }
 }
 
-/* Upload/Download Buttons,  */
-#file-form .file-button-label {
+/* Upload/Download Buttons (not technically <button>), other buttons */
+#file-form .file-button-label,
+button {
     /* Add click button cursor */
     cursor: pointer;
 
